@@ -1,0 +1,29 @@
+{
+  "name": "matrixai-server",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "files": [
+    "src/**/*.js",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test --test-reporter=spec test/*.test.js",
+    "check": "node --check src/index.js && npm test"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^11.0.1",
+    "@fastify/static": "^10.1.3",
+    "better-sqlite3": "^11.7.0",
+    "fastify": "^5.2.1",
+    "ssh2": "^1.16.0",
+    "ws": "^8.18.0"
+  }
+}

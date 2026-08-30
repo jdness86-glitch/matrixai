@@ -1,0 +1,23 @@
+{
+  "id": "/",
+  "name": "MatrixAI — Pilotage de flotte",
+  "short_name": "MatrixAI",
+  "description": "Supervision et pilotage sécurisé de vos machines, services et bots Telegram.",
+  "lang": "fr",
+  "start_url": "/overview",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#050914",
+  "theme_color": "#050914",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Flotte", "short_name": "Flotte", "url": "/overview", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Événements", "short_name": "Événements", "url": "/events", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
