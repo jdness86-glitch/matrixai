@@ -59,7 +59,7 @@ jobs:
           curl -fsS http://127.0.0.1:3000/ | grep '<div id="root"></div>'
           curl -fsSI http://127.0.0.1:3000/sw.js | grep -i 'cache-control: no-cache'
           kill -TERM "$PID"
-          wait "$PID"
+          wait "$PID" || true
       - name: Audit production critique
         run: npm audit --prefix server --omit=dev --audit-level=critical
 
